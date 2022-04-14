@@ -16,7 +16,7 @@ interface APIErrors {
 	METHOD_NOT_ALLOWED: string;
 }
 
-const availableChoices = ['rock', 'paper', 'scissors', 'random'];
+const availableChoices = ['rock', 'paper', 'scissors'];
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<APIResponse | APIError>) {
 	if (req.method !== 'GET') res.status(405).json({ code: 'METHOD_NOT_ALLOWED', message: `Method ${req.method} is not allowed.` });
@@ -25,7 +25,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse<APIRes
 
 	if (choice === 'random') choice = availableChoices[Math.floor(Math.random() * availableChoices.length)];
 
-	if (!availableChoices.includes(choice)) return res.status(400).json({ code: 'INVALID_CHOICE', message: 'The provided choice is invalid.' });
+	if (!availableChoices.includes(choice) && choice !== 'random') return res.status(400).json({ code: 'INVALID_CHOICE', message: 'The provided choice is invalid.' });
 
 	const computer = availableChoices[Math.floor(Math.random() * availableChoices.length)];
 
