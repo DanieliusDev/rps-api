@@ -1,0 +1,71 @@
+.main {
+    margin: 30px;
+}
+
+.main h1 {
+    color: white;
+}
+
+.main h2 {
+    margin-top: 30px;
+    color: #e9ecef;
+}
+
+.main p {
+    color: white;
+    margin-top: 20px;
+    color: #adb5bd;
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.endpoint {
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+.method {
+    color: #fcc419;
+    margin-right: 15px;
+}
+
+.param {
+    color: #fab005;
+}
+
+.main h3 {
+    color: #e9ecef;
+    margin-top: 20px;
+}
+
+.main ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.main li {
+    background-color: #212529;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: #adb5bd;
+}
+
+.choices li {
+    max-width: 100px;
+}
+
+.response li {
+    max-width: 800px;
+}
+
+.type {
+    color: #51cf66;
+}
+
+.property {
+    color: #868e96;
+}

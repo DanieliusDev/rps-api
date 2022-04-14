@@ -1,6 +1,15 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  reactStrictMode: true,
-}
+	reactStrictMode: true,
+	redirects: [
+		{
+			source: '/docs',
+			destination: '/',
+			permanent: true,
+		},
+	],
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
