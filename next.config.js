@@ -1,13 +1,16 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: true,
-	redirects: [
+	redirects: () => [
 		{
 			source: '/docs',
 			destination: '/',
-			permanent: true,
+			permanent: false,
+		},
+		{
+			source: '/github',
+			destination: 'https://github.com/gamertike/rps-api',
+			permanent: false,
 		},
 	],
 };

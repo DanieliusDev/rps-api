@@ -1,10 +1,13 @@
-import type { NextPage } from 'next';
+import { NextPage } from 'next';
+import Link from 'next/link';
 import styles from '../styles/Main.module.css';
 
 const Home: NextPage = () => {
 	return (
 		<main className={styles.main}>
-			<h1>RPS API</h1>
+			<Link href="/github" passHref>
+				<a>RPS API</a>
+			</Link>
 
 			<h2>Base API URL</h2>
 			<p>https://rps.gamertike.com/api/</p>

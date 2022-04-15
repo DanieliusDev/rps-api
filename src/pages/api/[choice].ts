@@ -13,7 +13,7 @@ interface APIError<Code extends keyof APIErrors = keyof APIErrors> {
 
 interface APIErrors {
 	INVALID_CHOICE: 'The provided choice is invalid.';
-	METHOD_NOT_ALLOWED: string;
+	METHOD_NOT_ALLOWED: string; 
 }
 
 const availableChoices = ['rock', 'paper', 'scissors'];

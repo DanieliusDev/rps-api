@@ -2,7 +2,8 @@
     margin: 30px;
 }
 
-.main h1 {
+.main a {
+    font-size: 50px;
     color: white;
 }
 
