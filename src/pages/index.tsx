@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 			<div className={styles.endpoint}>
 				<span className={styles.method}>GET</span>
 				<span>
-					/<span className={styles.param}>{'{choice}'}</span>
+					/<span className={styles.param}>{'{choice?}'}</span>
 				</span>
 			</div>
 
@@ -23,29 +23,31 @@ const Home: NextPage = () => {
 			<ul className={styles.choices}>
 				<li>
 					<span className={styles.property}>rock</span>
+					<span className={styles.alias}>r</span>
 				</li>
 				<li>
 					<span className={styles.property}>paper</span>
+					<span className={styles.alias}>p</span>
 				</li>
 				<li>
 					<span className={styles.property}>scissors</span>
-				</li>
-				<li>
-					<span className={styles.property}>random</span>
+					<span className={styles.alias}>s</span>
 				</li>
 			</ul>
 
 			<h3>response</h3>
 			<ul className={styles.response}>
 				<li>
-					<span className={styles.property}>you</span>: <span className={styles.type}>string</span> - your choice
+					<span className={styles.property}>you</span>:{' '}
+					<span className={styles.type}>{'"rock" | "paper" | "scissors"'}</span> - Your choice
 				</li>
 				<li>
-					<span className={styles.property}>computer</span>: <span className={styles.type}>string</span> - The computers choice
+					<span className={styles.property}>computer</span>:{' '}
+					<span className={styles.type}>{'"rock" | "paper" | "scissors"'}</span> - The computers choice
 				</li>
 				<li>
-					<span className={styles.property}>winner</span>: <span className={styles.type}>boolean | null</span> - Whether you won the game,
-					If the value is null, it is a draw.
+					<span className={styles.property}>winner</span>: <span className={styles.type}>boolean | null</span>{' '}
+					- Whether you won the game. If null, it{'\''}s a draw.
 				</li>
 			</ul>
 		</main>
