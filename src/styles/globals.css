@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+	--bg-color : #1D1D1D;
+	--text-color: white;
+	--secondary-text-color: #e9ecef;
+	--block-color : #1778d3;
+	--secondary-block-color : #2495ff;
+	--method-color : #2997ff;
+}
+
 body {
-	background-color: #343a40;
+	background-color: var(--bg-color);
 }
 
 a {
 	text-decoration: none;
-	color: white;
+	color: var(--text-color);
 }
 
 * {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -19,10 +30,10 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #fcc419;
+	background-color: var(--secondary-block-color);
 	border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background-color: #fab005;
+	background-color: var(--block-color);
 }
